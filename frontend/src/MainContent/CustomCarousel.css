@@ -1,0 +1,22 @@
+.carousel .slide img {
+  width: 75%; 
+  max-height: 400px; 
+  margin: auto; 
+  object-fit: contain; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  border: 1px solid #ddd; 
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+}
+
+.carousel .slide img:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+}
+
+@media (max-width: 768px) {
+  .carousel .slide img {
+    max-height: 250px; 
+    width: 90%; 
+  }
+}

@@ -1,0 +1,60 @@
+h1 {
+  text-align: center;
+}
+
+.green-tea {
+  width: 80%;
+  max-height: 500px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .green-tea img {
+    max-height: 200px; /* Adjust for smaller screens */
+  }
+}
+
+
+
+.kelowna-button {
+  margin-bottom: 10px;
+}
+
+.about-container {
+  margin: 3em;
+}
+
+hr {
+  width: 50%;
+  margin: 1em auto;
+  color: black;
+}
+
+.about-us-text {
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: larger;
+}
+
+.visit-us-container {
+  position: relative;
+}
+
+.visit-us-container img {
+  width: 95.6%;
+  max-height: 500px;
+  margin: auto;
+}
+
+.visit-us-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 105px;
+  background-color: rgb(0, 0, 0, 0.3);
+  text-align: center;
+}

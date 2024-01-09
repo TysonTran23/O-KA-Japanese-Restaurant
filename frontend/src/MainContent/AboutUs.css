@@ -1,0 +1,98 @@
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center alignment for better focus */
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.about-text {
+  flex: 1;
+  max-width: 45%; /* Slightly reduced for balance */
+  padding: 20px;
+  font-size: 1.1rem; /* Slightly larger font size */
+}
+
+.about-image {
+  flex: 1;
+  max-width: 45%;
+  padding: 20px;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Carousel Styles */
+.carousel .slide img {
+  width: 100%; /* Full width for better visibility */
+  max-height: 500px;
+}
+
+@media (max-width: 768px) {
+  .about-text,
+  .about-image {
+    max-width: 100%;
+  }
+  .carousel .slide img {
+    max-height: 300px; /* Adjusted for better display on small screens */
+  }
+}
+
+/* Typography */
+h2 {
+  font-size: 2rem; /* Larger font for headings */
+  color: #000000; /* Brand color or a suitable shade */
+  margin-bottom: 1rem;
+}
+
+p {
+  line-height: 1.6; /* Improved line spacing for readability */
+  color: #000000; /* Slightly darker for better contrast */
+}
+
+.about {
+  padding: 40px;
+}
+
+/* Review Carousel Specific Styles */
+.reviews-carousel .carousel-slide {
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: 10px 0;
+}
+
+.reviews-carousel .carousel-slide h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.reviews-carousel .carousel-slide p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.reviews-carousel .carousel-slide p.rating {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #ff9800;
+}
+
+@media (max-width: 768px) {
+  .reviews-carousel .carousel-slide {
+    padding: 15px;
+  }
+  .reviews-carousel .carousel-slide h3 {
+    font-size: 1.2rem;
+  }
+  .reviews-carousel .carousel-slide p {
+    font-size: 1rem;
+  }
+}

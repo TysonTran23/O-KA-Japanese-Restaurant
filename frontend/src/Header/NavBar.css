@@ -1,0 +1,41 @@
+.nav-container {
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* vertically align items */
+  margin: 2em;
+  background-color: black;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1; /* Makes both div nav-links divs take up equal space */
+}
+
+.nav-container .nav-link {
+  text-decoration: none; /* Removes the underline from links */
+  margin: 0 20px;
+  color: white;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+.nav-container .nav-link:hover,
+.nav-container .nav-link:active,
+.nav-container .active-link {
+  color: white; /* Keeps the color white on hover and active */
+  text-decoration: underline; /* Underlines the text */
+}
+
+.logo {
+  width: 200px;
+  height: 60px;
+}
